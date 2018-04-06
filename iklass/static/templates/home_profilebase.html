@@ -1,0 +1,30 @@
+<!--个人主页父模板页面-->
+{% extends "home_base.html" %}
+{% block mainContent %}
+  <!--个人主页通用顶部栏-->
+  <div class="container">
+    <div class="pageavatar">
+      <div class="container">
+        <img class="home-page-img featurette-image img-responsive img-circle" src="{{ user.avatar }}" alt="Generic placeholder image" style="margin:0 auto;border:4px solid white;">
+        <h2 style="color:white;">{{ user.user }}</h2>
+        <h5 style="color:white;">{{ user.about }}</h5>
+        <a href="/user/{{ user.user }}/profile"><img class="home-page-icon" src="{{ static_url("images/profile-revese.png") }}"></a>
+        <a href="/user/{{ user.user }}/new"><img class="home-page-icon" src="{{ static_url("images/preferencesicon-edit.png") }}"></a>
+        <!--<a href="/account/profile"><img class="home-page-icon" src="/static/images/preferencesicon-reverse.png"></a>-->
+        <div class="home-page-nav-block">
+          <a href="/user/{{ user.user }}/appointment" class="home-page-nav" style="border-right:1px white solid;">
+            <span {% if handler.profile_mode == 0 %}class="home-page-nav-active"{% end %}>我的约课</span>
+          </a>
+          <a href="/user/{{ user.user }}/demand" class="home-page-nav">
+            <span {% if handler.profile_mode == 1 %}class="home-page-nav-active"{% end %}>我的求课</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="{{ static_url("images/page-background2.jpg") }}" style="position:relative;width:100%;height:426px;">
+  <!--/.end-->
+  <!--主题内容-->
+  {% block subContent%}
+  {% end %}
+{% end %}

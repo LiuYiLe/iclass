@@ -1,0 +1,131 @@
+<!--求课Detail页面-->
+{% extends "home_listbase.html" %}
+{% block subContent %}
+  <div class="col-sm-8 blog-main">
+    <div class="blog-post">
+      <div class="row">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="home-yueke-center">
+              <img src="../static/images/teacher.jpg" class="img-circle home-yueke-avatar">
+              <h4>Hans Zimmer</h4>
+              <button type="button" class="btn btn-primary">应课</button>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <h4><a href="#">Hans Zimmer's Music Class</a></h4>
+            <p>2015年5月1日 20:00</p>
+            <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来<a href="/projects/p/{{ page.pid }}">&nbsp;&nbsp;Show all...</a></p>
+            <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> 经信教学楼</span></p>
+            <div class="home-qiu-teacher">
+              <!--显示应课者的头像，头像列表未做，之后补给你-->
+              <ul class="list-unstyled">
+                <li class="home-qiu-teacher"><img src="../static/images/comment_avatar1.gif" class="img-circle"></li>
+                <li class="home-qiu-teacher"><img src="../static/images/comment_avatar2.gif" class="img-circle"></li>
+                <li class="home-qiu-teacher"><img src="../static/images/comment_avatar3.gif" class="img-circle"></li>
+                <li class="home-qiu-teacher"><img src="../static/images/comment_avatar4.gif" class="img-circle"></li>
+                <li class="home-qiu-teacher"><img src="../static/images/comment_avatar5.gif" class="img-circle"></li>
+              </ul>
+              <!--/.end-->
+            </div>
+            <p style="float:left;padding-top:15px;"><a href="#">等8人存在意向 >></a></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12">
+            <h4>详细描述</h4>
+            <hr/>
+            <p>当你老了 头发白了
+              睡意昏沉
+              当你老了 走不动了
+              炉火旁取暖 回忆青春
+              多少人曾爱你青春欢畅的时辰
+              爱慕你的美丽 假意或真心
+              只有一个人还爱你虔诚的灵魂
+              爱你苍老的脸上的皱纹
+              当你老了 眼眉低垂
+              灯火昏黄不定
+              风吹过来 你的消息
+              这就是我心里的歌
+              多少人曾爱你青春欢畅的时辰
+              爱慕你的美丽 假意或真心
+              只有一个人还爱你虔诚的灵魂
+              爱你苍老的脸上的皱纹
+              我留不住所有的岁月
+              岁月却留住我
+              不曾为我停留的芬芳
+              却是我的春天
+            </p>
+            <br/>
+            <h4>过往评价</h4>
+            <hr/>
+            <!--评论表单-->
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-default col-sm-offset-11">提交</button>
+            </form>
+          </div>
+        </div>
+        <!--单条评论Feed-->
+        <div class="row">
+          <div class="col-sm-2 home-yueke-detail-comment">
+            <img src="../static/images/comment_avatar1.gif" class="img-circle home-yueke-avatar">
+          </div>
+          <div class="col-sm-10">
+            <h4><a href="#">Gakki</a></h4>
+            <p>2015年5月1日 20:00</p>
+            <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来</p>
+          </div>
+        </div>
+        <hr/>
+        <!--/.Feed-->
+        <div class="row">
+          <div class="col-sm-2 home-yueke-detail-comment">
+            <img src="../static/images/comment_avatar2.gif" class="img-circle home-yueke-avatar">
+          </div>
+          <div class="col-sm-10">
+            <h4><a href="#">Gakki</a></h4>
+            <p>2015年5月1日 20:00</p>
+            <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来</p>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-2 home-yueke-detail-comment">
+            <img src="../static/images/comment_avatar3.gif" class="img-circle home-yueke-avatar">
+          </div>
+          <div class="col-sm-10">
+            <h4><a href="#">Gakki</a></h4>
+            <p>2015年5月1日 20:00</p>
+            <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来</p>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-2 home-yueke-detail-comment">
+            <img src="../static/images/comment_avatar4.gif" class="img-circle home-yueke-avatar">
+          </div>
+          <div class="col-sm-10">
+            <h4><a href="#">Gakki</a></h4>
+            <p>2015年5月1日 20:00</p>
+            <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来</p>
+          </div>
+        </div>
+        <hr/>
+        <div class="row">
+          <div class="col-sm-2 home-yueke-detail-comment">
+            <img src="../static/images/comment_avatar5.gif" class="img-circle home-yueke-avatar">
+          </div>
+          <div class="col-sm-10">
+            <h4><a href="#">Gakki</a></h4>
+            <p>2015年5月1日 20:00</p>
+            <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来</p>
+          </div>
+        </div>
+      </div>
+      </div><!-- /.blog-post -->
+      <hr/>
+      </div><!-- /.blog-main -->
+    {% end %}

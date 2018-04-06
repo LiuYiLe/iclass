@@ -1,0 +1,23 @@
+<!--注册页面-->
+{% extends "sign_base.html" %}
+{% block signForm %}
+<div class="container" style="position:absolute;left:9%;">
+  <div class="ab">
+    <div class="signcontainer">
+
+      <form class="form-signup" role="form" action="/signup" method="POST">
+        {% raw xsrf_form_html() %}
+        <a href="/"><img src="../static/images/logo.png"></a>
+        <hr>
+        <input type="input" class="form-control" placeholder="Username" name="username" required autofocus>
+        <input type="password" class="form-control" placeholder="Password" name="password" required>
+        <input type="password" class="form-control" placeholder="Password Validate" name="passvali" required>
+        <input type="email" class="form-control" placeholder="Email" name="email" required>
+        <input type="phone" class="form-control" placeholder="Phone" name="phone" required>
+      <button class="btn btn-lg btn-primary btn-block" type="submit">点击注册</button>
+    </form>
+  </div>
+</div>
+</div>
+{% end %}
+<!-- /container -->

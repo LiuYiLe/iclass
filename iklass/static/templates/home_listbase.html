@@ -1,0 +1,36 @@
+{% extends "home_base.html" %}
+{% block mainContent %}
+  <div class="container">
+    <div class="margintopfixed">
+      <div class="row">
+        <!--约课feed & detail-->
+        {% block subContent %}
+        {% end %}
+        <!--侧边栏-->
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+          <div class="sidebar-module sidebar-module-inset">
+            <div class="home-banner">
+              <a href="#"><img src="/static/images/poster.png" style="height:250px;width:250px;"></a>
+            </div>
+            <h4><span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>&nbsp;&nbsp;公告</h4>
+            <div class="well">
+              <p><strong>这是一条通知</strong></p>
+              <p>That's play together</p>
+            </div>
+          </div>
+          <div class="sidebar-module">
+            <h4><span class="glyphicon glyphicon-link" aria-hidden="true"></span>&nbsp;&nbsp;友情链接</h4>
+            <ol class="list-unstyled">
+              <li>&nbsp;&nbsp;&nbsp;<a href="http://www.github.com" alt="">Github</a></li>
+              <li>&nbsp;&nbsp;&nbsp;<a href="http://www.behance.net" alt="">Behance</a></li>
+              <li>&nbsp;&nbsp;&nbsp;<a href="http://www.dribbble.com" alt="">Dribbble</a></li>
+            </ol>
+          </div>
+          <div class="home-banner">
+            <a href="#"><img src="/static/images/poster2.png" style="height:250px;width:250px;"></a>
+          </div>
+        </div>
+        </div><!-- /.row -->
+      </div>
+    </div>
+  {% end %}

@@ -1,0 +1,56 @@
+<!--活动管理-->
+{% extends "admin_base.html" %}
+{% block active5 %}class="active"{% end %}
+{% block mainContent %}
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <h2 class="sub-header">Push New Public Activity</h2>
+  <!--添加活动表单-->
+  <form role="form" method="POST" action="/admin/editpage" enctype="multipart/form-data">
+    <input type="hidden" class="form-control" id="exampleInputEmail1" name="pid" value="">
+    <div class="form-group">
+      <label for="exampleInputEmail1">Title</label>
+      <input type="input" class="form-control" id="exampleInputEmail1" placeholder="Enter title" name="ptitle" value="">
+    </div>
+    <div class="form-group">
+      <label for="exampleInputPassword1">Content</label>
+      <textarea rows="16" class="form-control" id="exampleInputPassword1" placeholder="Enter content" name="pcontent"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="exampleInputFile">Picture</label>
+      <input type="file" name="file" id="exampleInputFile" value="">
+      <p class="help-block">Piece of picture</p>
+    </div>
+    <div class="checkbox">
+      <label>
+        <input type="checkbox"> Check me out
+      </label>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="reset" class="btn btn-default">Reset</button>
+  </form>
+  <hr>
+  <h2 class="sub-header">All Activities</h2>
+  <hr>
+  <!--查询活动-->
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Topic</th>
+          <th>Time</th>
+          <th>Option</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Design</td>
+          <td>2015-5-1</td>
+          <td><a href="#">更改</a> | <a href="#">删除</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% end %}

@@ -1,0 +1,29 @@
+<!--求课管理-->
+{% extends "admin_base.html" %}
+{% block active3 %}class="active"{% end %}
+{% block mainContent %}
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <div class="table-responsive">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Id</th>
+          <th>Classname</th>
+          <th>Time</th>
+          <th>Organizer</th>
+          <th>Option</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Javascript</td>
+          <td>2015-5-1</td>
+          <td>王晨</td>
+          <td><a href="#">删除</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+{% end %}

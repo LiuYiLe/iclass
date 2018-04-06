@@ -1,0 +1,49 @@
+{% extends "home_profilebase.html" %}
+{% block subContent %}
+  <!--个人主页求课页面列表-->
+  <div class="container">
+    <div class="margintoppagefixed">
+      <div class="row">
+        <div class="col-sm-8 blog-main">
+          <h4>最近动态</h4>
+          <hr/>
+          {% if course_list %}
+          {% for course in course_list %}
+          <!--单条Feed-->
+          <div class="blog-post">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="home-yueke-center">
+                  <img src="{{ current_user.info.avatar }}" class="img-circle home-yueke-avatar">
+                  <h4>{{ current_user.info.realName }}</h4>
+                  <button type="button" class="btn btn-primary">约课</button>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4><a href="#">{{ course.title }}</a></h4>
+                <p>{{ course.time }}</p>
+                <p>{{ course.info }}<a href="">&nbsp;&nbsp;Show all...</a></p>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true">{{ course.location }}</span></p>
+              </div>
+            </div>
+            </div><!-- /.blog-post -->
+            {% end %}
+            {% end %}
+            <!--更多-->
+            <button type="button" class="btn btn-default btn-lg btn-block home-more-button">更多..</button>
+          </div>
+          <!--个人资料-->
+          <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
+            <div class="sidebar-module sidebar-module-inset">
+              <h4>个人资料</h4>
+              <table class="table">
+                <tr><td>学校：{{ user.school }}</td></tr>
+                <tr><td>专业：{{ user.major }}</td></tr>
+              </table>
+            </div>
+          </div>
+          <!--/.end-->
+          </div><!-- /.row -->
+        </div>
+      </div>
+    {% end %}

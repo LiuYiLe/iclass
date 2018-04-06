@@ -1,0 +1,45 @@
+<!--求课列表页面-->
+{% extends "home_listbase.html" %}
+{% block subContent %}
+  <div class="col-sm-8 blog-main">
+    <h4>最近动态</h4>
+    <hr/>
+    <!--单条Feed-->
+    {% if result_list %}
+    {% for result in result_list %}
+    <div class="blog-post">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="home-yueke-center">
+            <img src="{{ result.user.avatar }}" class="img-circle home-yueke-avatar">
+            <h4>{{ result.user.realName }}</h4>
+            <button type="button" class="btn btn-primary">应课</button>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="#">{{ result.course.title }}</a></h4>
+          <p>{{ strftime('%Y/%m%/%d',localtime(result.course.time)) }}</p>
+          <p>{{ result.course.info }}<a href="">&nbsp;&nbsp;Show all...</a></p>
+          <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> {{ result.course.location }}</span></p>
+          <div class="home-qiu-teacher">
+            <!--显示应课者的头像，头像列表未做，之后补给你-->
+            <ul class="list-unstyled">
+              <li class="home-qiu-teacher"><img src="/static/images/comment_avatar1.gif" class="img-circle"></li>
+              <li class="home-qiu-teacher"><img src="/static/images/comment_avatar2.gif" class="img-circle"></li>
+              <li class="home-qiu-teacher"><img src="/static/images/comment_avatar3.gif" class="img-circle"></li>
+              <li class="home-qiu-teacher"><img src="/static/images/comment_avatar4.gif" class="img-circle"></li>
+              <li class="home-qiu-teacher"><img src="/static/images/comment_avatar5.gif" class="img-circle"></li>
+            </ul>
+            <!--/.end-->
+          </div>
+          <p style="float:left;padding-top:15px;"><a href="#">等8人存在意向 >></a></p>
+        </div>
+      </div>
+    </div>
+    {% endfor %}
+    {% endif %}
+    <hr>
+    <!--更多-->
+    <button type="button" class="btn btn-default btn-lg btn-block home-more-button">更多..</button>
+    </div><!-- /.blog-main -->
+  {% endblock %}

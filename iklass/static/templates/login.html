@@ -1,0 +1,25 @@
+<!--登录页面-->
+{% extends "sign_base.html" %}
+{% block signForm %}
+  <div class="container" style="position:absolute;left:9%;">
+    <div class="ab">
+      <div class="signcontainer">
+
+        <form class="form-signin" role="form" action="/login" method="POST">
+          {% raw xsrf_form_html() %}
+          <a href="/"><img src="../static/images/logo.png"></a>
+          <hr>
+          <input type="input" class="form-control" placeholder="Username" name="username" required autofocus>
+          <input type="password" class="form-control" placeholder="Password" name="password" required>
+          <div class="checkbox">
+            <label>
+              <input type="checkbox" value="remember-me"> Remember me
+            </label>
+          </div>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">登录</button>
+        <a href="/signup"><button class="btn btn-lg btn-success btn-block" type="button" style="margin-top:5px;">注册</button></a>
+      </form>
+    </div>
+  </div>
+  </div> <!-- /container -->
+{% end %}

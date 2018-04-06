@@ -1,0 +1,198 @@
+.bodyfixed{
+	margin-top:10%;
+}
+.signcontainer{
+	max-width:330px;
+	background-color:rgba(255,255,255,.50);
+	border-radius:25px;
+	box-shadow:0 1px 2px rgba(0,0,0,.25);
+	margin:0px auto 0px auto;
+	padding:0px auto 0px auto;
+	z-index:1;
+}
+.form-signup{
+	max-width:330px;
+	padding:25px;
+	margin:0 auto;
+}
+.form-signup input{
+	margin:10px 0;
+	height:40px;
+}
+.margintopfixed{
+	margin-top:100px;
+}
+.margintoppagefixed{
+	margin-top:20px;
+}
+.abouttitlefixed{
+	margin-top:0;
+}
+.memberfeed{
+	border-top:3px solid #428bca;
+	background-color:#ffffff;
+	box-shadow:0 2px 3px rgba(0,0,0,.25);
+	padding:20px;
+	margin-bottom:20px;
+}
+.mpartimg{
+	float:left;
+	margin:20px 10px 0 10px;
+}
+.mpartimg > img{
+	height:38px;
+	width:38px;
+}
+.mparttitle{
+	float:left;
+	margin:0 10px 0 10px;
+}
+.mpartbio{
+	float:left;
+	max-width:223px;
+	word-break:break-all;
+	overflow:auto;
+}
+.featurette-heading-fixed{
+	margin-top:0;
+	font-size: 50px;
+}
+.list-margin-fixed{
+	margin:0 3px;
+}
+.list-margin-top-fixed{
+	margin:12px 5px;
+}
+.navbar-brand{
+	padding-bottom:5px;
+	padding-top:5px;
+}
+.home-page-img{
+	height:150px;
+	width:150px;
+}
+.pageavatar{
+	position:absolute;
+	z-index:19;
+	text-align:center;
+	margin-top:80px;
+	display:block;
+}
+.sign-back{
+	background-image:url("../images/back.jpg");
+	background-size:100%;
+}
+section{
+	padding:15px 0 15px 0;
+}
+.gray-flow{
+	background-color:#EEF1F2;
+
+}
+footer{
+	margin-top:20px;
+	background-color:#434749;
+	padding:40px;
+	color:white;
+}
+footer h4{
+	margin-bottom:40px;
+}
+
+.footer-itemborder{
+	height:200px;
+	border-right:1px dotted #717171;
+}
+
+body{
+	padding-bottom:0;
+}
+nav .active{
+	border-bottom:3px solid #0083ff;
+}
+.navbar-default .navbar-nav>.active>a{
+	background-color:#fff;
+}
+.navbar-default{
+	background-color:#fff;
+}
+.home-yueke-avatar{
+	height:60px;
+	width:60px;
+	margin:0 auto;
+}
+.home-yueke-detail-comment{
+	text-align:center;
+	padding-top:15px;
+}
+.home-yueke-center{
+	text-align:center;
+}
+.home-page-icon{
+	height:30px;
+	width:30px;
+	margin:5px 10px;
+}
+.home-page-nav-block{
+	margin:20px 0 0 0;
+	border-top:1px white solid;
+	padding:14px;
+}
+.home-page-nav-block a:hover{
+	text-decoration:none;
+	color:#dddddd;
+}
+.home-page-nav{
+	color:white;
+	font-size:14px;
+	text-decoration:none;
+	padding:16px 50px;
+}
+.home-page-nav-active{
+	padding-bottom:12px;
+	border-bottom:3px white solid;
+}
+.home-more-button{
+	color:grey;
+	font-size:13px;
+}
+.home-banner{
+	padding-top:30px;
+	padding-bottom:30px;
+}
+.home-act-poster{
+	width:750px;
+	margin-bottom:30px;
+}
+.home-public-feed{
+
+	text-align:center;
+	padding:0 50px;
+
+}
+.home-public-feed-title{
+	position:absolute;
+	top:30%;
+	color:white;
+	font-size:220%;
+
+	z-index:20;
+	left:30%;
+}
+.home-public-feed-poster{
+
+	z-index:10;
+	width:100%;
+	left:0;
+  margin:20px 0;
+}
+.home-qiu-teacher ul li{
+	float:left;
+	margin:0 5px;
+}
+.home-qiu-teacher ul li img{
+	width:35px;
+}
+.home-qiu-teacher span{
+	padding-top:20px;
+}

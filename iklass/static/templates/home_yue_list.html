@@ -1,0 +1,101 @@
+<!--约课列表页面-->
+{% extends "home_listbase.html" %}
+{% block subContent %}
+  <div class="col-sm-8 blog-main">
+    <h4>最近动态</h4>
+    <hr/>
+    <!--单条Feed-->
+    {% for course in courseList %}
+    <div class="blog-post">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="home-yueke-center">
+            <img src="../static/images/teacher.jpg" class="img-circle home-yueke-avatar">
+            <h4>{{ course.user }}</h4>
+            <button type="button" class="btn btn-primary">约课</button>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="#">{{ course.title }}</a></h4>
+          <p>{{ locale.format_date(course.time, relative=False) }}</p>
+          <p>{{ course.info }}<a href="/projects/p/">&nbsp;&nbsp;Show all...</a></p>
+          <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> {{ course.location }}</span></p>
+        </div>
+      </div>
+    </div>
+    <hr>
+    {% end %}
+    <!-- /.Feed -->
+    <div class="blog-post">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="home-yueke-center">
+            <img src="../static/images/teacher.jpg" class="img-circle home-yueke-avatar">
+            <h4>Hans Zimmer</h4>
+            <button type="button" class="btn btn-primary">约课</button>
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <h4><a href="#">Hans Zimmer's Music Class</a></h4>
+          <p>2015年5月1日 20:00</p>
+          <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来<a href="/projects/p/">&nbsp;&nbsp;Show all...</a></p>
+          <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> 经信教学楼</span></p>
+        </div>
+      </div>
+      </div><!-- /.blog-post -->
+      <hr><div class="blog-post">
+        <div class="row">
+          <div class="col-sm-3">
+            <div class="home-yueke-center">
+              <img src="../static/images/teacher.jpg" class="img-circle home-yueke-avatar">
+              <h4>Hans Zimmer</h4>
+              <button type="button" class="btn btn-primary">约课</button>
+            </div>
+          </div>
+          <div class="col-sm-9">
+            <h4><a href="#">Hans Zimmer's Music Class</a></h4>
+            <p>2015年5月1日 20:00</p>
+            <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来<a href="/projects/p/">&nbsp;&nbsp;Show all...</a></p>
+            <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> 经信教学楼</span></p>
+          </div>
+        </div>
+        </div><!-- /.blog-post -->
+        <hr><div class="blog-post">
+          <div class="row">
+            <div class="col-sm-3">
+              <div class="home-yueke-center">
+                <img src="../static/images/teacher.jpg" class="img-circle home-yueke-avatar">
+                <h4>Hans Zimmer</h4>
+                <button type="button" class="btn btn-primary">约课</button>
+              </div>
+            </div>
+            <div class="col-sm-9">
+              <h4><a href="#">Hans Zimmer's Music Class</a></h4>
+              <p>2015年5月1日 20:00</p>
+              <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来<a href="/projects/p/">&nbsp;&nbsp;Show all...</a></p>
+              <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> 经信教学楼</span></p>
+            </div>
+          </div>
+          </div><!-- /.blog-post -->
+          <hr><div class="blog-post">
+            <div class="row">
+              <div class="col-sm-3">
+                <div class="home-yueke-center">
+                  <img src="../static/images/teacher.jpg" class="img-circle home-yueke-avatar">
+                  <h4>Hans Zimmer</h4>
+                  <button type="button" class="btn btn-primary">约课</button>
+                </div>
+              </div>
+              <div class="col-sm-9">
+                <h4><a href="#">Hans Zimmer's Music Class</a></h4>
+                <p>2015年5月1日 20:00</p>
+                <p>我的丰功伟绩，值得浇铸于青铜器上，铭刻于大理石上，镌于木板上，永世长存，等我的这些事迹在世上流传之时，幸福之年代和幸福之世纪亦即到来<a href="/projects/p/">&nbsp;&nbsp;Show all...</a></p>
+                <p><span class="glyphicon glyphicon-map-marker" aria-hidden="true"> 经信教学楼</span></p>
+              </div>
+            </div>
+            </div><!-- /.blog-post -->
+            <hr>
+            <!--更多-->
+            <button type="button" class="btn btn-default btn-lg btn-block home-more-button">更多..</button>
+            </div><!-- /.blog-main -->
+          {% end %}
